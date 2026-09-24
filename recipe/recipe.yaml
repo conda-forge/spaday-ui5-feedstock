@@ -1,13 +1,13 @@
 context:
-  version: "0.1.0"
+  version: "0.2.0"
 
 package:
   name: spaday-ui5
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/s/spaday-ui5/spaday_ui5-${{ version }}.tar.gz
-  sha256: f6923996875ea473ebc23bb3dab70e6d9895137c40de8eb13065caa3cc6e20f8
+  url: https://files.pythonhosted.org/packages/1b/d9/ad71a1aa46dcede2830a5b103cf98a2b05abca60d3b0726b40e3d19273c9/spaday_ui5-${{ version }}.tar.gz
+  sha256: 6b7c5f40daf9792ece7b8b7ecda36ec47fb6e0cc3b30eeec31074c69959dda9a
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - hatch-js
   run:
     - python >=${{ python_min }}
-    - spaday >=0.8.2,<1
+    - spaday >=0.10.0,<1
 
 tests:
   - python:
